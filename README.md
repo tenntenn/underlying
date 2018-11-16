@@ -1,3 +1,3 @@
-# Undelying
+# Underlying
 
-See: https://godoc.org/github.com/tenntenn/undelying
+See: https://godoc.org/github.com/tenntenn/underlying
