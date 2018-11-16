@@ -5,7 +5,7 @@ import "go/types"
 // Convert converts specified type to a type which contains only basic types.
 // e.g. (MyInt is defined by "type MyInt int")
 //  []MyInt -> []int
-//  <-chan MyInt
+//  <-chan MyInt -> <-chan int
 //  map[MyInt]MyInt -> map[int]int
 //
 // if ptrElem is true, Convert converts a pointer type to its elem type.
@@ -23,7 +23,7 @@ type Converter struct {
 // Convert converts specified type to a type which contains only basic types.
 // e.g. (MyInt is defined by "type MyInt int")
 //  []MyInt -> []int
-//  <-chan MyInt
+//  <-chan MyInt -> <-chan int
 //  map[MyInt]MyInt -> map[int]int
 //
 // if ptrElem is true, Convert converts a pointer type to its elem type.
